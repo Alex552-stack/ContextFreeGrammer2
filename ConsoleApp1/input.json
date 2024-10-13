@@ -1,0 +1,10 @@
+{
+  "StartSymbol": "E",
+  "NonTerminals": ["E", "T", "F"],
+  "Terminals": ["a", "+", "*", "(", ")"],
+  "Rules": {
+    "E": ["E+T", "T"],
+    "T": ["T*F", "F"],
+    "F": ["a", "(E)"]
+  }
+}
